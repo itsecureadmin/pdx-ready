@@ -22,13 +22,15 @@ DEBUG = False
 
 if DEBUG:
     # That last entry is the local access URL for VirtualBox
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '10.0.2.2']
+    # ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '10.0.2.2']
+    ALLOWED_HOSTS = ['*']
     SITE_URL = "http://127.0.0.1:8000"
     logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s %(levelname)s %(message)s')
 else:
     # hazardready.org is the current production server. 23.92.25.126 is its numeric address. eldang.eldan.co.uk is our demo/test server
     # ALLOWED_HOSTS = ['.hazardready.org', '23.92.25.126']
-    ALLOWED_HOSTS = ['.hazardready.org', '23.92.25.126', '45.79.37.211', '172.17.0.1', '172.29.0.1']
+    # ALLOWED_HOSTS = ['.hazardready.org', '23.92.25.126', '45.79.37.211', '172.17.0.1', '172.29.0.1']
+    ALLOWED_HOSTS = ['*']
 
 # Application definition
 INSTALLED_APPS = (
