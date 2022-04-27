@@ -41,6 +41,8 @@ RUN pip list
 WORKDIR /app/disasterinfosite
 RUN unzip data.zip
 
+RUN npm install && npm run webpack
+
 WORKDIR /app
 
 EXPOSE 8000

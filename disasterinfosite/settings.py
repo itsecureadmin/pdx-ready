@@ -27,7 +27,8 @@ if DEBUG:
     logging.basicConfig(level = logging.DEBUG, format = '%(asctime)s %(levelname)s %(message)s')
 else:
     # hazardready.org is the current production server. 23.92.25.126 is its numeric address. eldang.eldan.co.uk is our demo/test server
-    ALLOWED_HOSTS = ['.hazardready.org', '23.92.25.126']
+    # ALLOWED_HOSTS = ['.hazardready.org', '23.92.25.126']
+    ALLOWED_HOSTS = ['.hazardready.org', '23.92.25.126', '45.79.37.211', '172.17.0.1', '172.29.0.1']
 
 # Application definition
 INSTALLED_APPS = (
